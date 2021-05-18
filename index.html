@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Void</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Darkness">
+		<meta name="description" content="Make Void great again!">
+		<meta name="keywords" content="void, userscripts, bot, minimap, pixelplanet, pixelplanet.fun, ppf, darkness"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="./resources/favicon.png">
+		<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+		<link rel="stylesheet" type="text/css" href="./resources/style.css">
+	</head>
+	<body>
+		<script>
+			const backgrounds = [
+				'https://wallpapercave.com/wp/wp2555875.png',
+				'https://wallpapercave.com/wp/wp2555881.png',
+				'https://data2.1freewallpapers.com/download/stars-sky-night-1920x1080.jpg',
+				'https://orsted.com/-/media/WWW/Images/Corp/Campaign/SpaceSafari/space-safari-background.png',
+				'https://miro.medium.com/max/2625/1*5Yaci134qndT0MaiMjTUjw.jpeg'
+			];
+
+			(async () => {
+				while(true){
+					if(backgrounds.length === 0) return;
+					
+					if(localStorage.prevBackgroundUrl && backgrounds.length > 1){
+						backgrounds.splice(backgrounds.indexOf(localStorage.prevBackgroundUrl), 1);
+					}
+
+					const backgroundUrl = backgrounds[~~(Math.random() * backgrounds.length)];
+					try {
+						await checkImage(backgroundUrl);
+						localStorage.prevBackgroundUrl = backgroundUrl;
+						setBackgroundImage(backgroundUrl);
+						return;
+					} catch (e){
+						console.error(e);
+						backgrounds.splice(backgrounds.indexOf(backgroundUrl), 1);
+					}
+				}
+			})();
+
+			function setBackgroundImage(url) {
+				document.body.style['background-image'] = `url('${url}')`;
+			}
+
+			function checkImage(url){
+				const img = new Image();
+				img.src = url;
+				return new Promise((resolve, reject) => {
+					img.onerror = reject;
+					img.onload = resolve;
+				});
+			}
+		</script>
+		<div class="main-column">
+			<center><h1>Void</h1></center>
+			<h2>Some useful things</h2>
+			<div class="userscript">
+				<h3 class="userscript-name">Checkpoints</h3>
+				<img class="userscript-img" src="./resources/checkpoints.png"></img>
+				<div class="userscript-block">
+					<div class="userscript-subtitle">Target site</div>
+					<div class="userscript-content"><a target="_" href="https://pixelplanet.fun">pixelplanet.fun</a></div>
+				</div>
+				<div class="userscript-block">
+					<div class="userscript-subtitle">Author</div>
+					<div class="userscript-content">Darkness</div>
+				</div>
+				<div class="userscript-block">
+					<div class="userscript-subtitle">Description</div>
+					<div class="userscript-content">The script can save named points on the game map for quick navigation to them.</div>
+				</div>
+				<div class="userscript-block">
+					<div class="userscript-subtitle">Installation</div>
+					<div class="userscript-content">
+						<ul>
+							<li><a target="_" href="https://www.tampermonkey.net">Download Tampermonkey Stable</a></li>
+							<li><a target="_" href="https://github.com/TouchedByDarkness/pixelplanet-checkpoints/raw/main/script.user.js">Install script</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="userscript">
+				<h3 class="userscript-name">Void bot</h3>
+				<img class="userscript-img" src="./resources/void bot.png"></img>
+				<div class="userscript-block">
+					<div class="userscript-subtitle">Target site</div>
+					<div class="userscript-content"><a target="_" href="https://pixelplanet.fun">pixelplanet.fun</a></div>
+				</div>
+				<div class="userscript-block">
+					<div class="userscript-subtitle">Author</div>
+					<div class="userscript-content">Darkness</div>
+				</div>
+				<div class="userscript-block">
+					<div class="userscript-subtitle">Description</div>
+					<div class="userscript-content">Spreads black void using complex strategies.</div>
+				</div>
+				<div class="userscript-block">
+					<div class="userscript-subtitle">Installation</div>
+					<div class="userscript-content">
+						<ul>
+							<li><a target="_" href="https://www.tampermonkey.net">Download Tampermonkey Stable</a></li>
+							<li><a target="_" href="https://github.com/TouchedByDarkness/PixelPlanet-Void-Bot/raw/master/InitScript.user.js">Install script</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="userscript">
+				<h3 class="userscript-name">PixelPlanet bot</h3>
+				<img class="userscript-img" src="./resources/ppf bot.png"></img>
+				<div class="userscript-block">
+					<div class="userscript-subtitle">Target site</div>
+					<div class="userscript-content"><a target="_" href="https://pixelplanet.fun">pixelplanet.fun</a></div>
+				</div>
+				<div class="userscript-block">
+					<div class="userscript-subtitle">Author</div>
+					<div class="userscript-content">Darkness</div>
+				</div>
+				<div class="userscript-block">
+					<div class="userscript-subtitle">Description</div>
+					<div class="userscript-content">Browser bot. Has 5 strategies, including linear, chess, center, random and a strategy taken from Woyken's bot.</div>
+				</div>
+				<div class="userscript-block">
+					<div class="userscript-subtitle">Installation</div>
+					<div class="userscript-content">
+						<ul>
+							<li><a target="_" href="https://www.tampermonkey.net">Download Tampermonkey Stable</a></li>
+							<li><a target="_" href="https://github.com/TouchedByDarkness/PixelPlanet-Bot/raw/master/InitScript.user.js">Install script</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="userscript">
+				<h3 class="userscript-name">OverlayPicture</h3>
+				<img class="userscript-img" src="https://github.com/Woyken/pixelplanet.fun-OverlayPicture/blob/master/readmeRelated/images/Screenshot1.png?raw=true"></img>
+				<div class="userscript-block">
+					<div class="userscript-subtitle">Target site</div>
+					<div class="userscript-content"><a target="_" href="https://pixelplanet.fun">pixelplanet.fun</a></div>
+				</div>
+				<div class="userscript-block">
+					<div class="userscript-subtitle">Author</div>
+					<div class="userscript-content">Woyken</div>
+				</div>
+				<div class="userscript-block">
+					<div class="userscript-subtitle">Description</div>
+					<div class="userscript-content">Shows the template on top of the canvas and automatically selects colors from the palette.</div>
+				</div>
+				<div class="userscript-block">
+					<div class="userscript-subtitle">Installation</div>
+					<div class="userscript-content">
+						<ul>
+							<li><a target="_" href="https://www.tampermonkey.net">Download Tampermonkey Stable</a></li>
+							<li><a target="_" href="https://woyken.github.io/pixelplanet.fun-OverlayPicture/pixelPlanetOverlay-loader.user.js">Install script</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
