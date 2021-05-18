@@ -1,0 +1,108 @@
+body {
+	color: red;
+	background: black;
+	background-repeat: repeat;
+	font-family: monospace;
+}
+
+a {
+	font-weight: bold;
+	color: red;
+}
+
+a:hover {
+	text-shadow: 0 0 5px red;
+}
+
+h1 {
+	text-shadow: 0 0 15px red;
+}
+
+h2, h3, h4, h5 {
+	text-shadow: 0 0 1px red;
+	margin: 5px 0 5px 5px;
+}
+
+ul {
+	margin: 0 5px 0 5px;
+    padding-left: 15px;
+}
+
+.main-column {
+	top: 0;
+    transform: translate(-50%, 0);
+    width: 80%;
+    left: 50%;
+    position: absolute;
+}
+
+.userscript {
+	position: relative;
+	margin: 20px 0 30px 25px;
+	padding: 2px 0 2px 5px;
+	/*padding-left: 5px;*/
+	/*padding-top: 2px;*/
+	background: black;
+	/*cursor: pointer;*/
+	/*border-right: 1px solid darkred;
+	border-bottom: 1px solid darkred;
+	box-shadow: 4px 4px 5px rgba(64,0,0,64);*/
+}
+
+.userscript::before {
+	z-index: -1;
+	content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right bottom, red 0%, black 60%);
+}
+
+.userscript-img {
+	max-width: 35%;
+	/*max-height: 500px;*/
+	border: 1px solid darkred;
+	/*margin: 0px 5px 5px 0px;*/
+}
+
+/*.userscript-name::after {
+	content: '';
+	position: relative;
+	left: -5px;
+	height: 2px;
+	width: 50%;
+	background: red; 
+}*/
+
+.userscript-block {
+	position: relative;
+	display: block;
+}
+
+.userscript-subtitle {
+	font-weight: bold;
+}
+
+.userscript-content {
+	position: relative;
+	padding-left: 15px;
+}
+
+*::-webkit-scrollbar {
+    cursor: pointer;
+    width: 7.5px;
+    background-color: transparent;
+    border-left: 1px rgb(64, 64, 64) solid;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 1px rgb(64, 64, 64) solid;
+    background: rgb(32, 32, 32);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
