@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         PP Bot
-// @version      1.2
+// @version      1.3
 // @description  Have fun
 // @author       Darkness
 // @grant 		 GM_xmlhttpRequest
+// @grant 		 unsafeWindow
 // @require		 https://raw.githubusercontent.com/mitchellmebane/GM_fetch/master/GM_fetch.min.js
 // @connect		 githubusercontent.com
 // @connect		 github.com
@@ -33,6 +34,6 @@ fetch('https://raw.githubusercontent.com/TouchedByDarkness/PixelPlanet-Bot/maste
 })
 .then(bytecode => {
 	if (bytecode !== undefined) {
-		new Function("const [self, GM] = arguments; " + compressor.decode(bytecode))(self, GM);
+		new Function("const [self, GM, unsafeWindow] = arguments; " + compressor.decode(bytecode))(self, GM, unsafeWindow);
 	}
 });
