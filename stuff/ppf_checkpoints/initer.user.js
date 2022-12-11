@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         PP Checkpoints
+// @name         PPF Checkpoints
 // @version      2.0
 // @description  save named points
 // @author       Darkness
