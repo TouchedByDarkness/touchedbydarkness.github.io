@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         PP Void Bot
+// @name         PPF Void Bot
 // @version      1.0
 // @description  Make us great again!
 // @author       Darkness
