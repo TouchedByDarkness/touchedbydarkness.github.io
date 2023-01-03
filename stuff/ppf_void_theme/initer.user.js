@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PPF Void theme
-// @version      1.0
+// @version      1.1
 // @description  hope you'll like this
 // @author       Darkness
 // @grant 		 GM_xmlhttpRequest
@@ -31,7 +31,9 @@ fetch('https://raw.githubusercontent.com/TouchedByDarkness/pixelplanet-void-styl
 			!href.includes(ssv.availableStyles.default));
 	});
 
-	link.parentNode.removeChild(link);
+	if(link) {
+		link.parentNode.removeChild(link);
+	}
 
 	const style = document.createElement('style');
 	style.innerHTML = css;
