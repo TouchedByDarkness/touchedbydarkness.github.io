@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PPF Dark bot
-// @version      2.1
+// @version      2.0
 // @description  Have fun
 // @author       Darkness
 // @grant 		 GM_xmlhttpRequest
