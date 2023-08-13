@@ -12,10 +12,12 @@
 // @connect		 glitch.me
 // @connect		 pixelplanet.fun
 // @connect		 fuckyouarkeros.fun
+// @connect		 www.canvaspixel.net
 // @downloadURL  https://touchedbydarkness.github.io/stuff/ppf_checkpoints/initer.user.js
 // @updateURL  	 https://touchedbydarkness.github.io/stuff/ppf_checkpoints/initer.user.js
 // @match      *://fuckyouarkeros.fun/*
 // @match      *://pixelplanet.fun/*
+// @match      *://www.canvaspixel.net/*
 // ==/UserScript==
 
 fetch('https://raw.githubusercontent.com/TouchedByDarkness/pixelplanet-checkpoints/main/script.js')
