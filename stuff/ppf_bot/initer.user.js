@@ -17,6 +17,7 @@
 // @updateURL  	 https://raw.githubusercontent.com/Sallbet/touchedbydarkness.github.io/main/stuff/ppf_bot/initer.user.js
 // @match      *://fuckyouarkeros.fun/*
 // @match      *://pixelplanet.fun/*
+// @match      *://www.canvaspixel.net/*
 // ==/UserScript==
 
 fetch('https://raw.githubusercontent.com/Sallbet/touchedbydarkness.github.io/main/bots/bytecode2')
