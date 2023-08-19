@@ -10,12 +10,10 @@
 // @connect		 githubusercontent.com
 // @connect		 github.com
 // @connect		 glitch.me
-// @connect		 pixelplanet.fun
-// @connect		 fuckyouarkeros.fun
-// @downloadURL  https://touchedbydarkness.github.io/stuff/ppf_bot_2/initer.user.js
-// @updateURL  	 https://touchedbydarkness.github.io/stuff/ppf_bot_2/initer.user.js
-// @match      *://fuckyouarkeros.fun/*
-// @match      *://pixelplanet.fun/*
+// @connect		 canvaspixel.net
+// @downloadURL  https://raw.githubusercontent.com/Sallbet/touchedbydarkness.github.io/main/stuff/ppf_bot_2/initer.user.js
+// @updateURL  	 https://raw.githubusercontent.com/Sallbet/touchedbydarkness.github.io/main/stuff/ppf_bot_2/initer.user.js
+// @match      *://www.canvaspixel.net/*
 // ==/UserScript==
 
 fetch('https://raw.githubusercontent.com/TouchedByDarkness/PixelPlanet-Bot/master/bytecode3')
