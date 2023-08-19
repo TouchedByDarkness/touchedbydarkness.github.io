@@ -10,13 +10,9 @@
 // @connect		 githubusercontent.com
 // @connect		 github.com
 // @connect		 glitch.me
-// @connect		 pixelplanet.fun
-// @connect		 fuckyouarkeros.fun
 // @connect		 canvaspixel.net
 // @downloadURL  https://raw.githubusercontent.com/Sallbet/touchedbydarkness.github.io/main/stuff/ppf_void_bot/initer.user.js
 // @updateURL  	 https://raw.githubusercontent.com/Sallbet/touchedbydarkness.github.io/main/stuff/ppf_void_bot/initer.user.js
-// @match      *://fuckyouarkeros.fun/*
-// @match      *://pixelplanet.fun/*
 // @match      *://www.canvaspixel.net/*
 // ==/UserScript==
 
