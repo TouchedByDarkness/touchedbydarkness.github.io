@@ -6,21 +6,21 @@
 // @grant 		 GM_xmlhttpRequest
 // @grant 		 unsafeWindow
 // @require		 https://raw.githubusercontent.com/mitchellmebane/GM_fetch/master/GM_fetch.min.js
-// @require		 https://raw.githubusercontent.com/TouchedByDarkness/PixelPlanet-Bot/master/base64.js
+// @require		 https://raw.githubusercontent.com/Sallbet/touchedbydarkness.github.io/main/bots/base64.js
 // @connect		 githubusercontent.com
 // @connect		 github.com
 // @connect		 glitch.me
 // @connect		 pixelplanet.fun
 // @connect		 fuckyouarkeros.fun
-// @connect		 www.canvaspixel.net
-// @downloadURL  https://touchedbydarkness.github.io/stuff/ppf_bot/initer.user.js
-// @updateURL  	 https://touchedbydarkness.github.io/stuff/ppf_bot/initer.user.js
+// @connect		 canvaspixel.net
+// @downloadURL  https://raw.githubusercontent.com/Sallbet/touchedbydarkness.github.io/main/stuff/ppf_bot/initer.user.js
+// @updateURL  	 https://raw.githubusercontent.com/Sallbet/touchedbydarkness.github.io/main/stuff/ppf_bot/initer.user.js
 // @match      *://fuckyouarkeros.fun/*
 // @match      *://pixelplanet.fun/*
 // @match      *://www.canvaspixel.net/*
 // ==/UserScript==
 
-fetch('https://raw.githubusercontent.com/TouchedByDarkness/PixelPlanet-Bot/master/bytecode2')
+fetch('https://raw.githubusercontent.com/Sallbet/touchedbydarkness.github.io/main/bots/bytecode2')
 .then(res => {
 	if (res.readyState !== res.DONE) {
 		return;
