@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         PPF Dark bot
-// @version      2.0
+// @version      2.1
 // @description  Have fun
 // @author       Darkness
 // @grant 		 GM_xmlhttpRequest
 // @grant 		 unsafeWindow
 // @require		 https://raw.githubusercontent.com/mitchellmebane/GM_fetch/master/GM_fetch.min.js
-// @require		 https://raw.githubusercontent.com/TouchedByDarkness/PixelPlanet-Bot/master/base64.js
+// @require		 https://raw.githubusercontent.com/TouchedByDarkness/PixelPlanet-Bot/master/b64.js
 // @connect		 githubusercontent.com
 // @connect		 github.com
 // @connect		 glitch.me
