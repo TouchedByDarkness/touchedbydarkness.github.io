@@ -17,10 +17,7 @@
 // @connect      pixelplanet.fun
 // @connect      localhost
 // @connect      pixmap.fun
-// @connect      chillpixel.xyz
 // @connect      pixelya.fun
-// @connect      pixuniverse.fun
-// @connect      globepixel.fun
 // @connect      pixelroyal.fun
 // @connect      pixvas.fun
 // @connect      countrypixel.fun
@@ -28,10 +25,7 @@
 // @match        *://*.pixelplanet.fun/*
 // @match        *://*.localhost/*
 // @match        *://*.pixmap.fun/*
-// @match        *://*.chillpixel.xyz/*
 // @match        *://*.pixelya.fun/*
-// @match        *://*.pixuniverse.fun/*
-// @match        *://*.globepixel.fun/*
 // @match        *://*.pixelroyal.fun/*
 // @match        *://*.pixvas.fun/*
 // @match        *://*.countrypixel.fun/*
