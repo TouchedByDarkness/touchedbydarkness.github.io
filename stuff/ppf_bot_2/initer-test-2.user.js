@@ -25,6 +25,7 @@
 // @connect      wplace.live
 // @connect      pxworld.xyz
 // @connect      canvaspix.fun
+// @connect      pixeland.fun
 // @match        *://*.fuckyouarkeros.fun/*
 // @match        *://*.pixelplanet.fun/*
 // @match        *://*.localhost/*
@@ -36,6 +37,7 @@
 // @match        *://*.wplace.live/*
 // @match        *://*.pxworld.xyz/*
 // @match        *://*.canvaspix.fun/*
+// @match        *://*.pixeland.fun/*
 // ==/UserScript==
 
 function parseVersion(versionString){return versionString.split(".").map(Number)}
