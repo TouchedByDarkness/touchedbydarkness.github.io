@@ -15,6 +15,7 @@
 // @connect      github.com
 // @connect      backend.wplace.live
 // @connect      pixeldays.xyz
+// @connect      pixeldays.ru
 // @connect      fuckyouarkeros.fun
 // @connect      pixelplanet.fun
 // @connect      localhost
@@ -30,6 +31,7 @@
 // @connect      gplace.xyz
 // @connect      pixunivers.fun
 // @connect      pixeldays.xyz
+// @connect      pixeldays.ru
 // @match        *://*.fuckyouarkeros.fun/*
 // @match        *://*.pixelplanet.fun/*
 // @match        *://*.localhost/*
@@ -45,6 +47,7 @@
 // @match        *://*.gplace.xyz/*
 // @match        *://*.pixunivers.fun/*
 // @match        *://*.pixeldays.xyz/*
+// @match        *://*.pixeldays.ru/*
 // ==/UserScript==
 
 function parseVersion(versionString){return versionString.split(".").map(Number)}
